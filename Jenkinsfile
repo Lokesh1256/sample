@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                build job: 'DemoWhenDeveloperCommitsCodeAutoRunJenkinsfile', quietPeriod: 0
                 echo 'Building..'
             }
         }
