@@ -6,6 +6,7 @@ pipeline {
             steps {
                 build job: 'DemoWhenDeveloperCommitsCodeAutoRunJenkinsfile', quietPeriod: 0
                 echo 'Building..'
+                sh 'ls -la'
             }
         }
         stage('Test') {
